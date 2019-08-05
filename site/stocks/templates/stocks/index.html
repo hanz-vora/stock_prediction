@@ -1,0 +1,12 @@
+
+<div> Enter a ticker symbol </div>
+
+
+<form action="#" method="post">
+    {% csrf_token %}
+    <input type="text" class="form-control" id="tckr" placeholder="" value=""
+           name='tckr'>
+    <input type="submit" value="Submit">
+ </form>
+
+<div>{{searchStock}}</div>
