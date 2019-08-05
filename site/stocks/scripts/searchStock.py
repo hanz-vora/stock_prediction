@@ -51,10 +51,11 @@ def curr_share_price(symbol):
   response_dict = json.loads(response.text)
 
   try:
+    #captures stock price for given ticker symbol
     response_val = round(float(response_dict["Global Quote"]["05. price"]),2)
   except:
     return('Please enter a valid ticker symbol')
-
-  return(name + ' ' + 'Current Price: $ ' + str(response_val) + ' ' + currency)
+  
+  return(name + ' ' + 'Current Price: $' + str(response_val) + ' ' + currency)
 
 
