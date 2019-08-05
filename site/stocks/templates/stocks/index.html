@@ -3,15 +3,28 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="{% static 'css/index.css' %}" type="text/css" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+        />
+        <title> Stock Info </title>
+        <link rel='shortcut icon' type='image/x-icon' href='../../static/resources/favicon.ico' />
 	</head>
-
-	<div class="stockInfo">Enter a ticker symbol</div>
-
-	<form action="#" method="post">
-		{% csrf_token %}
-		<input type="text" class="form-control" id="tckr" placeholder="" value="" name="tckr" />
-		<input type="submit" value="Submit" />
-	</form>
-
-	<div class="stockInfo">{{ searchStock }}</div>
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="display-4">Stock Info</h1>
+			<div class="md-form">
+                <form action="#" method="post">
+                    {% csrf_token %}
+				<input type="text" id="tckr" class="form-control" name="tckr" placeholder="Search for symbols or companies" />
+			</div>
+			<hr class="my-4" />
+            <input type="submit" value="Submit" class="btn btn-primary btn-lg" />
+        </form>
+        <hr class="my-4">
+        <p>{{ searchStock }}</p>
+        </div>
+	</div>
 </html>

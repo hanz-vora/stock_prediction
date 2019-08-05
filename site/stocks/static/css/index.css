@@ -1,3 +1,15 @@
 .stockInfo{
     font-size: 20px;
 }
+
+.jumbotron{
+    border-radius: 20px !important;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.container{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
