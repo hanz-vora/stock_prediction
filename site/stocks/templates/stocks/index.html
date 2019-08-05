@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
+<html class = "box-container">
 	<head>
 		<link rel="stylesheet" href="{% static 'css/index.css' %}" type="text/css" />
 		<link
@@ -11,7 +11,8 @@
         />
         <title> Stock Info </title>
         <link rel='shortcut icon' type='image/x-icon' href='../../static/resources/favicon.ico' />
-	</head>
+    </head>
+    <body class = "box"></body>
 	<div class="container">
 		<div class="jumbotron">
 			<h1 class="display-4">Stock Info</h1>
@@ -26,5 +27,5 @@
         <hr class="my-4">
         <p>{{ searchStock }}</p>
         </div>
-	</div>
+    </div>
 </html>

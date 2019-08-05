@@ -6,10 +6,19 @@
     border-radius: 20px !important;
     width: 100%;
     margin-top: 100px;
+    background-color: rgb(233, 236, 239,0.9) !important;
 }
 
 .container{
     justify-content: center;
     align-content: center;
     align-items: center;
+}
+
+.box{
+    background-image: url(../resources/background.jpg);
+}
+
+.box-container{
+    background-image: url(../resources/background.jpg);
 }
